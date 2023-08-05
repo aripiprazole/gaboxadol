@@ -5,15 +5,109 @@
   text-align: center;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 500px;
+}
+
+.code-editor {
+  display: flex;
+  font-family: "JetBrains Mono Thin", ui-monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  background: #000;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  width: 100%;
+  min-height: 500px;
+}
+
+.code-editor header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.5em;
+  padding: 1em;
+  background: #0e0e0e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.code-editor main {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 4em 1fr;
+}
+
+.code-editor textarea {
+  background: #000;
+  color: #fff;
+  border: none;
+  resize: none;
+  padding: 1em;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: hidden;
+  outline: none;
+  caret-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background 300ms;
+}
+
+.code-editor h1 {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.code-editor .buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.code-editor .buttons button {
+  display: flex;
+  align-items: center;
+}
+
+.code-editor .lines {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 1em;
+  user-select: none;
+  border-right: #171717 1px solid;
+  border-bottom-left-radius: 10px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
