@@ -54,7 +54,7 @@
 
 .code-editor textarea {
   background: #000;
-  color: #fff;
+  color: #cbcbcb;
   border: none;
   resize: none;
   padding: 1em;
@@ -63,7 +63,7 @@
   line-height: inherit;
   overflow: hidden;
   outline: none;
-  caret-color: #fff;
+  caret-color: #cbcbcb;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: background 300ms;
@@ -90,11 +90,16 @@
   flex: 1;
   flex-direction: column;
   justify-content: flex-end;
+  color: #8c8c8c;
   align-items: flex-end;
   padding: 1em;
   user-select: none;
   border-right: #171717 1px solid;
   border-bottom-left-radius: 10px;
+}
+
+.code-editor main {
+  font-family: "JetBrains Mono", ui-monospace;
 }
 
 .logo {
